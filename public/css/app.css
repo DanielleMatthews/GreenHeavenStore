@@ -5,6 +5,14 @@ body{
 ul{
     list-style-type: none;
 }
+#indexul {
+    display: flex;   
+    width: 100%;    
+    flex-wrap: wrap; 
+}
+#indexli {
+   flex: 1 0 33.33%; 
+}
 #main{
     position: relative;
     width: 100%;
@@ -12,15 +20,40 @@ ul{
 }
 img{
     border: 10px solid rgb(48, 80, 59);
+}
+#img{
     position: absolute;
     left: 25%;
-    
 }
 #info{
     text-align: center;
     border: 10px solid rgb(48, 80, 59);
     position: absolute;
     right: 25%;
-    width: 225px;
-    height: 225px;
+    width: 230px;
+    height: 230px;
+}
+form{
+    padding-top: 10px;
+}
+#editForm{
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    margin: 0 auto;
+    width: 57%;
+}
+a:link{
+    color: rgb(1, 2, 1);
+    font-size: 22px;
+}
+a:visited{ 
+    color:rgb(10, 37, 15);
+}
+a:hover{ 
+    color: rgb(196, 238, 196);
+}
+a:active{
+    color: rgb(185, 29, 125);
 }

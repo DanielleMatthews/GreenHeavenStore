@@ -6,7 +6,7 @@ class Show extends React.Component {
     return (
         <div id="main">
         <link rel="stylesheet" href="/css/app.css" />
-            <h1>{plant.name.charAt(0).toUpperCase() + plant.name.slice(1)}</h1>
+            <h1>{plant.name}</h1>
             <ul>
                 <li>
                 <h3> Care: {plant.care}</h3> 
@@ -15,13 +15,23 @@ class Show extends React.Component {
                 Price: ${plant.price} <br/> </p>
                 The {plant.name} is {plant.petSafe ? ' YES pet friendly!' : ' NOT pet friendly!'} <br/>
                 <br/>
-                There are {plant.qty} in stock!! <br></br>
+                There are {plant.qty} in stock!! 
+                <br/>
+                <form action={`/plants/${plant._id}?_method=PATCH`} method="POST">
+                  {plant.qty > 0 ? <input id="buy" type="submit" value="BUY"/> : null }
+                </form>
+                <br/>
+                <form action={`/plants/${plant._id}?_method=DELETE`} method="POST">
+                  <input id="delete" type="submit" value="DELETE"/>
+                </form> 
                 </div>
 
                 <div id="img"> 
                 <img src = {`${plant.img}.jpg`} height = "250px" width = "250px"></img> 
                 </div> <br></br>
-
+                <br/> <br/> <br/>
+                <a href={`/plants/${plant._id}/edit`}> Edit</a>
+                <br/> <br/> <br/> <br/>
                 <a href ="/plants"> See All Plants </a>
                 </li>
             </ul>

@@ -62,6 +62,18 @@ const dataController = {
         next()
       }
     })
+  },
+  buy(req, res, next){
+    Plant.findByIdAndUpdate(req.params.id, { $inc: {qty: -1 } }, {new: true }, (err, decQty) => {
+      if (err) {
+      res.status(404).send({
+        msg: err.message
+      })
+      } else {
+      res.locals.data.plant = decQty
+      next()
+      }
+    })
   }
 }
 

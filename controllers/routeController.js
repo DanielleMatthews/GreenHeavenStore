@@ -15,9 +15,13 @@ router.delete('/:id', dataController.destroy, viewController.redirectHome)
 router.put('/:id', dataController.update, viewController.redirectShow)
 // Create
 router.post('/', dataController.create, viewController.redirectHome)
+//Seed
+router.post('/seed', dataController.create, viewController.redirectHome)
 // Edit
 router.get('/:id/edit', dataController.show, viewController.edit)
 // Show
 router.get('/:id', dataController.show, viewController.show)
+//Buy
+router.patch('/:id', dataController.buy, viewController.redirectShow)
 // export router
 module.exports = router

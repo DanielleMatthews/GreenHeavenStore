@@ -10,6 +10,7 @@ class New extends React.Component {
         <form action="/plants" method="POST">
           Name: <input type="text" name="name" /> <br/>
           Type: <input type="text" name="type"/> <br/>
+          Care: <input type="text" name="care"/> <br/>
           Image Link: <input type="text" name="img" /> <br/>
           Price: <input type="text" name="price"/> <br/>
           Stock: <input type="text" name="qty"/> <br/>
