@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    background-color: rgb(136, 190, 172);
+}
+ul{
+    list-style-type: none;
+}
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+img{
+    border: 10px solid rgb(48, 80, 59);
+    position: absolute;
+    left: 25%;
+    
+}
+#info{
+    text-align: center;
+    border: 10px solid rgb(48, 80, 59);
+    position: absolute;
+    right: 25%;
+    width: 225px;
+    height: 225px;
+}

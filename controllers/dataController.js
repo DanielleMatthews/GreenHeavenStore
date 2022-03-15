@@ -11,7 +11,7 @@ const dataController = {
         res.locals.data.plants = allPlants
         next()
       }
-    });
+    })
   },
   create(req, res, next){
     req.body.petFriendly = req.body.petFriendly === "on" ? true : false;
@@ -24,7 +24,7 @@ const dataController = {
           res.locals.data.plant = createdPlant
           next()
         }
-    });
+    })
   },
   show(req, res, next){
     Plant.findById(req.params.id, (err, foundPlant)=>{
@@ -46,10 +46,10 @@ const dataController = {
           msg: err.message
         })
       } else {
-        res.locals.data.plant = updatedplant
+        res.locals.data.plant = updatedPlant
         next()
       }
-    });
+    })
   },
   destroy(req, res, next){
     Plant.findByIdAndRemove(req.params.id, (err, plant) => {
@@ -61,7 +61,7 @@ const dataController = {
         res.locals.data.plant = plant
         next()
       }
-    });
+    })
   }
 }
 
