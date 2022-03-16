@@ -7,7 +7,7 @@ const plantSchema = new mongoose.Schema({
     img: {type: String},
     price: {type: Number},
     qty: {type: Number},
-    petSafe: Boolean
+    petFriendly: Boolean
 })
 
 const Plant = mongoose.model('Plant', plantSchema)

@@ -7,7 +7,7 @@ class New extends React.Component {
         <link rel="stylesheet" href="/css/app.css" />
 
         <h1> New Plant </h1>
-        <form action="/plants" method="POST">
+        <form id="newForm" action="/plants" method="POST">
           Name: <input type="text" name="name" /> <br/>
           Type: <input type="text" name="type"/> <br/>
           Care: <input type="text" name="care"/> <br/>
@@ -17,6 +17,9 @@ class New extends React.Component {
           Pet Friendly: <input type="checkbox" name="petFriendly"/> <br/>
           <input type="submit" name="" value="Create Plant"/>
         </form>
+        <nav id="navNew">
+          <a href="/plants"> All Plants </a>  
+        </nav>
       </div>
     )
   }

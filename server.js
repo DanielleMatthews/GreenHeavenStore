@@ -10,7 +10,6 @@ db.once('open', ()=> {
     console.log('connected to mongo')
 })
 
-
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 
@@ -51,12 +50,12 @@ app.use('/plants', require('./controllers/routeController.js'))
 //     })
 // })
 
-//show route 
-app.get('/plants/:id', function(req, res){
-  Plant.findById(req.params.id, (err, foundPlant)=>{
-    res.render('Show', {plant:foundPlant})
-  })
-})
+// //show route 
+// app.get('/plants/:id', function(req, res){
+//   Plant.findById(req.params.id, (err, foundPlant)=>{
+//     res.render('Show', {plant:foundPlant})
+//   })
+// })
 
 //connect to mongo database
 // mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });

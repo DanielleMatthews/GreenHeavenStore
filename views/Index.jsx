@@ -13,7 +13,7 @@ class Index extends React.Component{
                         <li id="indexli">
                             <h3> {plant.name} </h3> 
                             <a href = {`/plants/${plant.id}`}> 
-                            <img src={`${plant.img}.jpg`} height = "250px" width = "250px"></img> 
+                            <img src={`${plant.img}.jpg`} height = "260px" width = "275px"></img> 
                             </a> 
                          
                         </li>
