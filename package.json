@@ -1,6 +1,9 @@
 {
   "name": "greenheavenstore",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.13.2"
+  },
   "description": "Project",
   "main": "server.js",
   "scripts": {

@@ -5,7 +5,7 @@ class Index extends React.Component{
         return (
             <div>
                 <link rel="stylesheet" href="/css/app.css" />
-                <h1> Plants Index </h1>
+                <h1> Green Heaven </h1>
                 <h3> <a href='/plants/new'>Create a new plant</a> </h3><br/> 
                 <ul id="indexul">
                     {this.props.plants.map((plant, i) => {
