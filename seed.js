@@ -67,6 +67,15 @@ const plantSeed = [
         price: 3000000 ,
         qty:  1,
         petFriendly: true
+    },
+    {
+        name: 'Fireworks Rex Begonia',
+        type: 'flowering',
+        care: 'partial, to full shade, keep soil damp',
+        img: 'https://www.terranovanurseries.com/wp-content/uploads/2019/07/Begonia-Fireworks-8',
+        price: 15.37 ,
+        qty:  27,
+        petFriendly: fasle
     }
 ]
   

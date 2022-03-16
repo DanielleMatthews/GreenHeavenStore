@@ -15,14 +15,14 @@ class Show extends React.Component {
                   Price: ${plant.price.toLocaleString("en-US")} <br/> </p>
                   The {plant.name} is {plant.petFriendly ? ' YES pet friendly!' : ' NOT pet friendly!'} <br/>
                   <br/>
-                  There is {plant.qty > 0 ?  plant.qty  : ' NONE ' } in stock
-                  <br/>
+                  There is {plant.qty > 0 ?  plant.qty.toLocaleString("en-US")  : ' NONE ' } in stock
+                  <br/> 
                   <form action={`/plants/${plant._id}?_method=PATCH`} method="POST">
-                    {plant.qty > 0 ? <input id="buy" type="submit" value="BUY"/> : null }
+                    {plant.qty > 0 ? <input className="btn" id="buy" type="submit" value="BUY"/> : null }
                   </form>
-                  <br/>
+                  
                   <form action={`/plants/${plant._id}?_method=DELETE`} method="POST">
-                    <input id="delete" type="submit" value="DELETE"/>
+                    <input className="btn" id="delete" type="submit" value="DELETE"/>
                   </form> 
                 </div>
                 
