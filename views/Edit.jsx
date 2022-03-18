@@ -1,4 +1,4 @@
-const React = require('react');
+const React = require('react')
 // As you can see we are using the app layout
 const DefaultLayout = require('./layout/Default.jsx')
 
@@ -22,6 +22,9 @@ class Edit extends React.Component{
                 <input type="submit" value="Submit Changes"/>
                 </form>
             </div>
+            <nav id="navEdit">
+                <a href="/plants"> All Plants </a>  
+            </nav>
             </DefaultLayout>
         )
     }

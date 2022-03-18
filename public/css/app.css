@@ -73,6 +73,11 @@ form{
     left:48%;
     top: 310px;
 }
+#navEdit{
+    position: absolute;
+    left:48%;
+    top: 310px;
+}
 a:link{
     color: rgb(1, 2, 1);
     font-size: 22px;
