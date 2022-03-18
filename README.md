@@ -36,7 +36,8 @@ npm install
 ```
 node seed.js
 ```
-* Then you will run this to get it working on your local host 
+* Create an .env file with the MONGO URI and the PORT in the file
+* Then you will run this to get it all working on your local host 
 ```
 nodemon
 ```
