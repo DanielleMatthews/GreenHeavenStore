@@ -32,12 +32,18 @@ Do you want to try it out for yourself?
 npm install
 ```
 * Create a .env file and add your own mongo uri and port 
-* There is a seed.js file that allows you to add to the database.
+* There is a seed.js file that will app products to the database.
 ```
 node seed.js
 ```
-
+* Then you will run this to get it working on your local host 
+```
+nodemon
+```
+* Make sure it console logs "connected to mongo" and "listening on port"
+* Navigate to the web browser http://localhost:3000/plants
 
 --------------------------------------------
 
-## Link to Youtube
+## Link to Video
+https://app.vidcast.io/share/63994bc7-333c-4caf-879f-5071948fa2b3
