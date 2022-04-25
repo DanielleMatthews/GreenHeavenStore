@@ -6,7 +6,7 @@ Project to create an online store by making a product inventory with full CRUD u
 ## Application Function
 Welcome to Green Heaven Plant Store
 
-An online store was created by combining knowlegde about CRUD applications, and databases with knowledge from MOD1 on HTML, CSS, and Javascript. This applicatoin allows the user to add, edit and delete items from a database.
+An online store was created by combining knowlegde about CRUD applications, and databases with knowledge from MOD1 on HTML, CSS, and Javascript. This applicatoin allows the user to add, edit and delete items from a database. It has been deployed to Heroku and can be accessed through this link, https://greenheaven.herokuapp.com/plants . 
 
 DISCLAIMER: this is NOT a real store
 
